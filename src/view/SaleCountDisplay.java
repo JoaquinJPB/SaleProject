@@ -1,9 +1,10 @@
 package view;
 
+import model.BidUser;
 import model.Sale;
 
-import java.util.List;
+import java.util.Map;
 
 public interface SaleCountDisplay {
-    void display(List<Sale> saleList);
+    void display(Map<BidUser,Sale> saleList);
 }

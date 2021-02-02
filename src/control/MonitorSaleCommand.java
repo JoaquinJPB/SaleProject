@@ -30,7 +30,7 @@ public class MonitorSaleCommand implements Command {
         activeSales = new HashMap<>();
         userSaleActive.active();
         saleActive();
-        execute();
+        saleCountDisplay.display(activeSales);
     }
 
     private void saleActive() {
@@ -46,11 +46,6 @@ public class MonitorSaleCommand implements Command {
 
     @Override
     public void execute() {
-        Iterator it = activeSales.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry e = (Map.Entry) it.next();
-            System.out.println(e.getKey() + " " + e.getValue());
-        }
     }
 
 }
