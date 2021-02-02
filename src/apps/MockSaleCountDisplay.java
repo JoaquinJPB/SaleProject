@@ -5,12 +5,9 @@ import model.Sale;
 import view.SaleCountDisplay;
 
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 
 public class MockSaleCountDisplay implements SaleCountDisplay {
-
-    private List<Sale> saleList;
 
     @Override
     public void display(Map<BidUser, Sale> activeSales) {
